@@ -1,11 +1,10 @@
 <script setup>
 import Header from '@/components/HeaderView.vue';
-import Footer from '@/components/FooterView.vue'
+import Footer from '@/components/FooterView.vue';
 </script>
 
-
 <template>
-  <Header/>
+  <Header />
   <RouterView />
   <Footer />
 </template>

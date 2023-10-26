@@ -11,7 +11,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Import pocketbase
 import PocketBase from 'pocketbase'
 // Objet pocketBase
-const pb = new PocketBase("http://127.0.0.1:8090");
+var pocketbase_ip = "";
+if (import.meta.env.MODE === "production")
+pocketbase_ip = "https://tavue.maelgrosjean.fr:443/";
+else pocketbase_ip = "http://127.0.0.1:8090/";
+
+const pb = new PocketBase(pocketbase_ip);
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

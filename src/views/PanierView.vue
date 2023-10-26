@@ -1,12 +1,6 @@
 <script>
 
 </script>
+<template></template>
 
-
-<template>
-
-</template>
-
-<style scoped>
-/* You can add additional styles here if needed */
-</style>
+<style scoped></style>
